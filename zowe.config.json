@@ -49,6 +49,5 @@
         "base": "my_base",
         "test4z": "lpar1.test4z",
         "db2": "lpar1.db2"
-    },
-    "plugins": []
+    }
 }
