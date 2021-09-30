@@ -41,11 +41,11 @@ Once you have met the prerequisites, follow these steps to install the Test4z Sa
 4. Open the zowe.config.json file and enter the following parameters. Ask your mainframe administrator for the specific information.
    1. Add the host property for your LPAR on line 6.
    2. Specify the port of your z/OSMF instance on line 16.
-   3. Specify the port of your Test4z service on line 24. Adjust other "test4z" properties if needed. 
+   3. Specify the port of your Test4z service on line 24 and your HLQ on line 27. Adjust other "test4z" properties if needed. 
         * Optional - Test4z is shipped with a self signed certificate. The rejectUnauthorized property is false by default. You may need to set it true depending on your installation. Ask your mainframe administrator for this information. The rejectUnauthorized property is set for all services in this example on line 43.
 
 5. Enter your Mainframe username and password for the LPAR as you are prompted after entering this command:
-        npx zowe config secureby executing the following commands in the given order through the Terminal (enter the command, hit the enter and the terminal will ask your information):
+        npx zowe config secure
                   
 6. Open the **src/setup-files/Batch-files/SetupBatchAppDS.sh** file and fill in the required parameters listed at the beginning of the file. **Important:** Make sure you use UPPER CASE for HLQ and Job Card fields.
     
