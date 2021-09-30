@@ -39,22 +39,14 @@ Once you have met the prerequisites, follow these steps to install the Test4z Sa
         npm install
         
 4. Open the zowe.config.json file and enter the following parameters. Ask your mainframe administrator for the specific information.
-   1. "zosmf" property. Fill in your ZOSMF specific information.
-   2. "test4z" property. Fill in thespecific information of the server where your Test4z service is running. 
-        * Optional - Test4z is shipped with a self signed certificate. The rejectUnauthorized property is false by default. You may need to set it true depending on your installation. Ask your mainframe administrator for this information.
+   1. Add the host property for your LPAR on line 6.
+   2. Specify the port of your z/OSMF instance on line 16.
+   3. Specify the port of your Test4z service on line 24. Adjust other "test4z" properties if needed. 
+        * Optional - Test4z is shipped with a self signed certificate. The rejectUnauthorized property is false by default. You may need to set it true depending on your installation. Ask your mainframe administrator for this information. The rejectUnauthorized property is set for all services in this example on line 43.
 
-5. Enter your Mainframe username and password by executing the following commands in the given order through the Terminal (enter the command, hit the enter and the terminal will ask your information):
-         
-         ZOSMF profile:
-         
-         npx zowe config set --secure profiles.lpar1.profiles.zosmf.properties.user 
-         npx zowe config set --secure profiles.lpar1.profiles.zosmf.properties.password
-       
-         Test4z profile:
-        
-         npx zowe config set --secure profiles.lpar1.profiles.test4z.properties.user 
-         npx zowe config set --secure profiles.lpar1.profiles.test4z.properties.password 
-         
+5. Enter your Mainframe username and password for the LPAR as you are prompted after entering this command:
+        npx zowe config secureby executing the following commands in the given order through the Terminal (enter the command, hit the enter and the terminal will ask your information):
+                  
 6. Open the **src/setup-files/Batch-files/SetupBatchAppDS.sh** file and fill in the required parameters listed at the beginning of the file. **Important:** Make sure you use UPPER CASE for HLQ and Job Card fields.
     
 7. Copy the JCL test files to your z/OS system by executing the following command (**make sure all the necessary fields are filled as mentioned in the previous step**):
