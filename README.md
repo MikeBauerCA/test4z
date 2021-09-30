@@ -105,8 +105,8 @@ The modified records are then used by the sample test case.
     
     `npx zowe zos-files delete data-set 'HLQ.TEST4Z.BATCHAPP.CUSTIN2' -f`
     
-    Click [here](https://docs.zowe.org/stable/web_help/docs/zowe_zos-files_delete_data-set.html)
-    for more information about the ZOWE data set delete command.
+    Click [here](https://docs.zowe.org/stable/web_help/index.html?p=zowe_zos-files_delete_data-set)
+    for more information about the Zowe data set delete command.
 
 ## License
 Visit [LICENSE.md](LICENSE.md) file.
