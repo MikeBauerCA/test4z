@@ -5,47 +5,35 @@
             "properties": {
                 "host": ""
             },
+            "secure": [
+                "user",
+                "password"
+            ],
             "profiles": {
                 "zosmf": {
                     "type": "zosmf",
                     "properties": {
-                        "port": 0,
-                        "host": ""
-                    },
-                    "secure": [
-                        "user",
-                        "password"
-                    ]
+                        "port": 0
+                    }
                 },
                 "test4z": {
                     "type": "test4z",
                     "properties": {
-                        "host": "",
                         "protocol": "https",
                         "type": "basic",
                         "port": 0,
                         "basePath": "/api/v1/test4z",
                         "strictSSL": false,
-                        "hlq": "",
-                        "rejectUnauthorized": false
-                    },
-                    "secure": [
-                        "user",
-                        "password"
-                    ]
+                        "hlq": ""
+                    }
                 },
                 "db2": {
                     "type": "db2",
                     "properties": {
                         "port": 0,
-                        "host": "",
                         "database": "",
                         "hlq": ""
-                    },
-                    "secure": [
-                        "user",
-                        "password"
-                    ]
+                    }
                 }
             }
         },
@@ -53,11 +41,7 @@
             "type": "base",
             "properties": {
                 "rejectUnauthorized": false
-            },
-            "secure": [
-                "user",
-                "password"
-            ]
+            }
         }
     },
     "defaults": {
