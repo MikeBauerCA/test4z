@@ -42,7 +42,7 @@ Once you have met the prerequisites, follow these steps to install the Test4z Sa
    1. Add the host property for your LPAR on [line 6](zowe.config.json#L6).
    2. Specify the port of your z/OSMF instance on [line 16](zowe.config.json#L16).
    3. Specify the port of your Test4z service on [line 24](zowe.config.json#L24) and your HLQ on [line 27](zowe.config.json#L27). Adjust other "test4z" properties if needed. 
-        * Optional - Test4z is shipped with a self signed certificate. The rejectUnauthorized property is false by default. You may need to set it true depending on your installation. Ask your mainframe administrator for this information. The rejectUnauthorized property is set for all services in this example on line 43.
+        * Optional - Test4z is shipped with a self signed certificate. The rejectUnauthorized property is false by default. You may need to set it true depending on your installation. Ask your mainframe administrator for this information. The rejectUnauthorized property is set for all services in this example on [line 43](zowe.config.json#L43).
 
 5. Enter your Mainframe username and password for the LPAR as you are prompted after entering this command:
         
