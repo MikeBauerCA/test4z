@@ -45,6 +45,7 @@ Once you have met the prerequisites, follow these steps to install the Test4z Sa
         * Optional - Test4z is shipped with a self signed certificate. The rejectUnauthorized property is false by default. You may need to set it true depending on your installation. Ask your mainframe administrator for this information. The rejectUnauthorized property is set for all services in this example on line 43.
 
 5. Enter your Mainframe username and password for the LPAR as you are prompted after entering this command:
+        
         npx zowe config secure
                   
 6. Open the **src/setup-files/Batch-files/SetupBatchAppDS.sh** file and fill in the required parameters listed at the beginning of the file. **Important:** Make sure you use UPPER CASE for HLQ and Job Card fields.
@@ -103,7 +104,7 @@ The modified records are then used by the sample test case.
  3. The compare, search, snapshot, and update samples  generate a temporary data set  when they run.
     We recommend you to delete the temporary data set by opening the terminal and issuing the following command:
     
-    `npx zowe zos-files delete data-set 'HLQ.TEST4Z.BATCHAPP.CUSTIN2' -f`
+        npx zowe zos-files delete data-set 'HLQ.TEST4Z.BATCHAPP.CUSTIN2' -f
     
     Click [here](https://docs.zowe.org/stable/web_help/index.html?p=zowe_zos-files_delete_data-set)
     for more information about the Zowe data set delete command.
